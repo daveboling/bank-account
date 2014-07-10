@@ -30,13 +30,14 @@ while (!done) {
   done === true;
   break;
 }
-
-if(balance < 0){ balance -= overdraftFee; console.log('You overdrew your posted balance!'); }
-
  //Display new balance
- console.log(balance);
+ console.log('Your new balance is: $' + balance);
  //Prompt again
   home = prompt('What would you like to do? (w)ithdraw, (d)eposit, or (q)uit? :');
+}
+
+if(balance < 0){ balance -= overdraftFee;
+console.log('You overdrew your posted balance!');
 }
 
 var sumWithdraw = 0;
